@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankSystem.UI", "BankSystem.UI\BankSystem.UI.csproj", "{A1D79AF5-0E31-4BCD-B7B9-FDF694EB456E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1D79AF5-0E31-4BCD-B7B9-FDF694EB456E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D79AF5-0E31-4BCD-B7B9-FDF694EB456E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D79AF5-0E31-4BCD-B7B9-FDF694EB456E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D79AF5-0E31-4BCD-B7B9-FDF694EB456E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7ABC6706-9179-48B0-B7D5-96B14384E7AA}
+	EndGlobalSection
+EndGlobal
