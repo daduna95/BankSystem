@@ -24,7 +24,9 @@ namespace BankSystem.UI.Forms
             {
                 FirstName = FirstName_textbox.Text,
                 LastName = LastName_textBox.Text,
-                Email = Email_textbox.Text
+                Email = Email_textbox.Text,
+                ID = ID_textbox.Text,
+                Password = Password_textbox.Text
             };
 
 
