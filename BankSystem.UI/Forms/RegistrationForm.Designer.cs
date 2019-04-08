@@ -32,7 +32,7 @@
             this.FirstName_textbox = new System.Windows.Forms.TextBox();
             this.LastName_textBox = new System.Windows.Forms.TextBox();
             this.Email_textbox = new System.Windows.Forms.TextBox();
-            this.ID_textbox = new System.Windows.Forms.TextBox();
+            this.PrivateNumber_textbox = new System.Windows.Forms.TextBox();
             this.Password_textbox = new System.Windows.Forms.TextBox();
             this.RepeatPassword_textbox = new System.Windows.Forms.TextBox();
             this.Registration_button = new System.Windows.Forms.Button();
@@ -70,13 +70,13 @@
             this.Email_textbox.Size = new System.Drawing.Size(228, 33);
             this.Email_textbox.TabIndex = 0;
             // 
-            // ID_textbox
+            // PrivateNumber_textbox
             // 
-            this.ID_textbox.Font = new System.Drawing.Font("Sylfaen", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ID_textbox.Location = new System.Drawing.Point(298, 416);
-            this.ID_textbox.Name = "ID_textbox";
-            this.ID_textbox.Size = new System.Drawing.Size(228, 33);
-            this.ID_textbox.TabIndex = 0;
+            this.PrivateNumber_textbox.Font = new System.Drawing.Font("Sylfaen", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PrivateNumber_textbox.Location = new System.Drawing.Point(298, 416);
+            this.PrivateNumber_textbox.Name = "PrivateNumber_textbox";
+            this.PrivateNumber_textbox.Size = new System.Drawing.Size(228, 33);
+            this.PrivateNumber_textbox.TabIndex = 0;
             // 
             // Password_textbox
             // 
@@ -145,9 +145,9 @@
             this.ID_label.Font = new System.Drawing.Font("Sylfaen", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ID_label.Location = new System.Drawing.Point(297, 391);
             this.ID_label.Name = "ID_label";
-            this.ID_label.Size = new System.Drawing.Size(29, 22);
+            this.ID_label.Size = new System.Drawing.Size(129, 22);
             this.ID_label.TabIndex = 2;
-            this.ID_label.Text = "ID";
+            this.ID_label.Text = "Private Number";
             // 
             // Password_label
             // 
@@ -194,7 +194,7 @@
             this.Controls.Add(this.Registration_button);
             this.Controls.Add(this.RepeatPassword_textbox);
             this.Controls.Add(this.Password_textbox);
-            this.Controls.Add(this.ID_textbox);
+            this.Controls.Add(this.PrivateNumber_textbox);
             this.Controls.Add(this.Email_textbox);
             this.Controls.Add(this.LastName_textBox);
             this.Controls.Add(this.FirstName_textbox);
@@ -211,7 +211,7 @@
         private System.Windows.Forms.TextBox FirstName_textbox;
         private System.Windows.Forms.TextBox LastName_textBox;
         private System.Windows.Forms.TextBox Email_textbox;
-        private System.Windows.Forms.TextBox ID_textbox;
+        private System.Windows.Forms.TextBox PrivateNumber_textbox;
         private System.Windows.Forms.TextBox Password_textbox;
         private System.Windows.Forms.TextBox RepeatPassword_textbox;
         private System.Windows.Forms.Button Registration_button;
