@@ -1,4 +1,5 @@
 ﻿using BankSystem.BL.Models;
+using BankSystem.UI.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,18 +18,18 @@ namespace BankSystem.UI.Forms
         {
             InitializeComponent();
         }
-
         private void Registration_button_Click(object sender, EventArgs e)
         {
-            UserModel userModel = new UserModel
-            {
-                FirstName = FirstName_textbox.Text,
-                LastName = LastName_textBox.Text,
-                Email = Email_textbox.Text,
-                ID = ID_textbox.Text,
-                Password = Password_textbox.Text
-            };
-
+             
+            
+                UserModel userModel = new UserModel
+                {
+                    FirstName = FirstName_textbox.Text,
+                    LastName = LastName_textBox.Text,
+                    Email = Email_textbox.Text,
+                    PrivateNumber = PrivateNumber_textbox.Text,
+                    Password = Password_textbox.Text
+                };
 
         }
     }
