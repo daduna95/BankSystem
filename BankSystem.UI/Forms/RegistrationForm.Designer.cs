@@ -43,6 +43,8 @@
             this.Password_label = new System.Windows.Forms.Label();
             this.RepeatPassword_label = new System.Windows.Forms.Label();
             this.Registration_picturebox = new System.Windows.Forms.PictureBox();
+            this.PasswordError_label = new System.Windows.Forms.Label();
+            this.RepeatPasswordError_label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Registration_picturebox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,6 +55,7 @@
             this.FirstName_textbox.Name = "FirstName_textbox";
             this.FirstName_textbox.Size = new System.Drawing.Size(228, 33);
             this.FirstName_textbox.TabIndex = 0;
+            this.FirstName_textbox.TextChanged += new System.EventHandler(this.Textbox_TextChanged);
             // 
             // LastName_textBox
             // 
@@ -61,6 +64,7 @@
             this.LastName_textBox.Name = "LastName_textBox";
             this.LastName_textBox.Size = new System.Drawing.Size(229, 33);
             this.LastName_textBox.TabIndex = 0;
+            this.LastName_textBox.TextChanged += new System.EventHandler(this.Textbox_TextChanged);
             // 
             // Email_textbox
             // 
@@ -69,6 +73,7 @@
             this.Email_textbox.Name = "Email_textbox";
             this.Email_textbox.Size = new System.Drawing.Size(228, 33);
             this.Email_textbox.TabIndex = 0;
+            this.Email_textbox.TextChanged += new System.EventHandler(this.Textbox_TextChanged);
             // 
             // PrivateNumber_textbox
             // 
@@ -77,6 +82,7 @@
             this.PrivateNumber_textbox.Name = "PrivateNumber_textbox";
             this.PrivateNumber_textbox.Size = new System.Drawing.Size(228, 33);
             this.PrivateNumber_textbox.TabIndex = 0;
+            this.PrivateNumber_textbox.TextChanged += new System.EventHandler(this.Textbox_TextChanged);
             // 
             // Password_textbox
             // 
@@ -86,6 +92,7 @@
             this.Password_textbox.Size = new System.Drawing.Size(229, 33);
             this.Password_textbox.TabIndex = 0;
             this.Password_textbox.UseSystemPasswordChar = true;
+            this.Password_textbox.TextChanged += new System.EventHandler(this.Textbox_TextChanged);
             // 
             // RepeatPassword_textbox
             // 
@@ -95,6 +102,7 @@
             this.RepeatPassword_textbox.Size = new System.Drawing.Size(229, 33);
             this.RepeatPassword_textbox.TabIndex = 0;
             this.RepeatPassword_textbox.UseSystemPasswordChar = true;
+            this.RepeatPassword_textbox.TextChanged += new System.EventHandler(this.Textbox_TextChanged);
             // 
             // Registration_button
             // 
@@ -179,11 +187,35 @@
             this.Registration_picturebox.TabIndex = 3;
             this.Registration_picturebox.TabStop = false;
             // 
+            // PasswordError_label
+            // 
+            this.PasswordError_label.AutoSize = true;
+            this.PasswordError_label.ForeColor = System.Drawing.Color.Red;
+            this.PasswordError_label.Location = new System.Drawing.Point(383, 458);
+            this.PasswordError_label.Name = "PasswordError_label";
+            this.PasswordError_label.Size = new System.Drawing.Size(85, 13);
+            this.PasswordError_label.TabIndex = 4;
+            this.PasswordError_label.Text = "Does Not Match";
+            this.PasswordError_label.Visible = false;
+            // 
+            // RepeatPasswordError_label
+            // 
+            this.RepeatPasswordError_label.AutoSize = true;
+            this.RepeatPasswordError_label.ForeColor = System.Drawing.Color.Red;
+            this.RepeatPasswordError_label.Location = new System.Drawing.Point(438, 519);
+            this.RepeatPasswordError_label.Name = "RepeatPasswordError_label";
+            this.RepeatPasswordError_label.Size = new System.Drawing.Size(85, 13);
+            this.RepeatPasswordError_label.TabIndex = 5;
+            this.RepeatPasswordError_label.Text = "Does Not Match";
+            this.RepeatPasswordError_label.Visible = false;
+            // 
             // RegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(850, 676);
+            this.Controls.Add(this.RepeatPasswordError_label);
+            this.Controls.Add(this.PasswordError_label);
             this.Controls.Add(this.Registration_picturebox);
             this.Controls.Add(this.RepeatPassword_label);
             this.Controls.Add(this.Password_label);
@@ -222,5 +254,7 @@
         private System.Windows.Forms.Label Password_label;
         private System.Windows.Forms.Label RepeatPassword_label;
         private System.Windows.Forms.PictureBox Registration_picturebox;
+        private System.Windows.Forms.Label PasswordError_label;
+        private System.Windows.Forms.Label RepeatPasswordError_label;
     }
 }
