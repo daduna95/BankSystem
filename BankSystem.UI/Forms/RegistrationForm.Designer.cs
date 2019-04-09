@@ -63,7 +63,7 @@
             this.LastName_textBox.Location = new System.Drawing.Point(297, 294);
             this.LastName_textBox.Name = "LastName_textBox";
             this.LastName_textBox.Size = new System.Drawing.Size(229, 33);
-            this.LastName_textBox.TabIndex = 0;
+            this.LastName_textBox.TabIndex = 1;
             this.LastName_textBox.TextChanged += new System.EventHandler(this.Textbox_TextChanged);
             // 
             // Email_textbox
@@ -72,7 +72,7 @@
             this.Email_textbox.Location = new System.Drawing.Point(298, 355);
             this.Email_textbox.Name = "Email_textbox";
             this.Email_textbox.Size = new System.Drawing.Size(228, 33);
-            this.Email_textbox.TabIndex = 0;
+            this.Email_textbox.TabIndex = 2;
             this.Email_textbox.TextChanged += new System.EventHandler(this.Textbox_TextChanged);
             // 
             // PrivateNumber_textbox
@@ -81,7 +81,7 @@
             this.PrivateNumber_textbox.Location = new System.Drawing.Point(298, 416);
             this.PrivateNumber_textbox.Name = "PrivateNumber_textbox";
             this.PrivateNumber_textbox.Size = new System.Drawing.Size(228, 33);
-            this.PrivateNumber_textbox.TabIndex = 0;
+            this.PrivateNumber_textbox.TabIndex = 3;
             this.PrivateNumber_textbox.TextChanged += new System.EventHandler(this.Textbox_TextChanged);
             // 
             // Password_textbox
@@ -90,7 +90,7 @@
             this.Password_textbox.Location = new System.Drawing.Point(297, 477);
             this.Password_textbox.Name = "Password_textbox";
             this.Password_textbox.Size = new System.Drawing.Size(229, 33);
-            this.Password_textbox.TabIndex = 0;
+            this.Password_textbox.TabIndex = 4;
             this.Password_textbox.UseSystemPasswordChar = true;
             this.Password_textbox.TextChanged += new System.EventHandler(this.Textbox_TextChanged);
             // 
@@ -100,7 +100,7 @@
             this.RepeatPassword_textbox.Location = new System.Drawing.Point(297, 538);
             this.RepeatPassword_textbox.Name = "RepeatPassword_textbox";
             this.RepeatPassword_textbox.Size = new System.Drawing.Size(229, 33);
-            this.RepeatPassword_textbox.TabIndex = 0;
+            this.RepeatPassword_textbox.TabIndex = 5;
             this.RepeatPassword_textbox.UseSystemPasswordChar = true;
             this.RepeatPassword_textbox.TextChanged += new System.EventHandler(this.Textbox_TextChanged);
             // 
@@ -108,10 +108,10 @@
             // 
             this.Registration_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Registration_button.Font = new System.Drawing.Font("Sylfaen", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Registration_button.Location = new System.Drawing.Point(347, 588);
+            this.Registration_button.Location = new System.Drawing.Point(356, 588);
             this.Registration_button.Name = "Registration_button";
             this.Registration_button.Size = new System.Drawing.Size(113, 40);
-            this.Registration_button.TabIndex = 1;
+            this.Registration_button.TabIndex = 6;
             this.Registration_button.Text = "Register";
             this.Registration_button.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Registration_button.UseVisualStyleBackColor = true;

@@ -1,4 +1,5 @@
 ﻿using BankSystem.BL.Models;
+using BankSystem.BL.Service;
 using BankSystem.UI.Utils;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,10 @@ namespace BankSystem.UI.Forms
 {
     public partial class RegistrationForm : Form
     {
+        IUserService user = new RegistrationService();
+        List<UserModel> TestDB = new List<UserModel>();
         public RegistrationForm()
+            
         {
             InitializeComponent();
             FirstName_textbox.Tag = FirstName_label;
@@ -26,6 +30,7 @@ namespace BankSystem.UI.Forms
         }
         private void Registration_button_Click(object sender, EventArgs e)
         {
+            
             if (ValidateInput())
             { 
                 UserModel userModel = new UserModel
@@ -36,6 +41,8 @@ namespace BankSystem.UI.Forms
                     PrivateNumber = PrivateNumber_textbox.Text,
                     Password = Password_textbox.Text
                 };
+              
+                TestDB.Add(user.RegisterUser(userModel));
             }
         }
 
