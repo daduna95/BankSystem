@@ -45,6 +45,7 @@ namespace BankSystem.BL.Repositorys
                             new XAttribute("FirstName", u.FirstName),
                             new XAttribute("LastName", u.LastName),
                             new XAttribute("Email", u.Email),
+                            new XAttribute("PrivateNumber", u.PrivateNumber),
                             new XAttribute("Password", u.Password)))));
             xDocument.Save(path);
             return registred;
