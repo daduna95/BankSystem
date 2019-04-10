@@ -11,6 +11,7 @@ namespace BankSystem.BL.Models
         public int Id { get; set; }
         public string ImageURL { get; set; }
         public string Name { get; set; }
+        public string CardNumber { get; set; }
         public decimal Balance { get; set; }
         public decimal MonthlyPayment { get; set; }
         public decimal Bonus { get; set; }
