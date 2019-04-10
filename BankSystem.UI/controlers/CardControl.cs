@@ -7,14 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BankSystem.BL.Models;
 
 namespace BankSystem.UI.controlers
 {
     public partial class CardControl : UserControl
     {
-        public CardControl()
+        
+        public CardControl(CardModel card)
         {
             InitializeComponent();
         }
+       
+        
     }
 }
