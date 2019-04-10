@@ -9,6 +9,7 @@ namespace BankSystem.BL.Service
 {
     public interface IUserService
     {
-        UserModel RegisterUser(UserModel userModel);
+        bool RegisterUser(UserModel user);
+        UserModel LoginUser(UserModel user);
     }
 }

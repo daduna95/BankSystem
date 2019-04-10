@@ -14,7 +14,7 @@ namespace BankSystem.UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new LogInForm(new BL.Models.UserModel()));
         }
     }
 }

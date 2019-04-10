@@ -9,9 +9,14 @@ namespace BankSystem.BL.Service
 {
     public class RegistrationService : IUserService
     {
-        public UserModel RegisterUser(UserModel userModel)
+        public UserModel LoginUser(UserModel user)
         {
-            return userModel;
+            throw new NotImplementedException();
+        }
+
+        public bool RegisterUser(UserModel userModel)
+        {
+            return true;
         }
     }
 }

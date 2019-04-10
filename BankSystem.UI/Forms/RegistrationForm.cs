@@ -1,4 +1,5 @@
 ﻿using BankSystem.BL.Models;
+using BankSystem.BL.Repositorys;
 using BankSystem.BL.Service;
 using BankSystem.UI.Utils;
 using System;
@@ -15,10 +16,9 @@ namespace BankSystem.UI.Forms
 {
     public partial class RegistrationForm : Form
     {
-        IUserService user = new RegistrationService();
-        List<UserModel> TestDB = new List<UserModel>();
+        public event EventHandler<UserModel> UserRegistered;
+    
         public RegistrationForm()
-            
         {
             InitializeComponent();
             FirstName_textbox.Tag = FirstName_label;
@@ -28,12 +28,13 @@ namespace BankSystem.UI.Forms
             Password_textbox.Tag = Password_label;
             RepeatPassword_textbox.Tag = RepeatPassword_label;
         }
+
         private void Registration_button_Click(object sender, EventArgs e)
         {
-            
             if (ValidateInput())
-            { 
-                UserModel userModel = new UserModel
+            {
+                IUserService userService = new UserServiceXmlRepository();
+                var newUser = new UserModel
                 {
                     FirstName = FirstName_textbox.Text,
                     LastName = LastName_textBox.Text,
@@ -41,8 +42,14 @@ namespace BankSystem.UI.Forms
                     PrivateNumber = PrivateNumber_textbox.Text,
                     Password = Password_textbox.Text
                 };
-              
-                TestDB.Add(user.RegisterUser(userModel));
+
+                if (userService.RegisterUser(newUser))
+                {
+                    UserRegistered?.Invoke(this, newUser);
+                    Close();
+                }
+                else
+                    RegistrationError_label.Visible = true;
             }
         }
 
@@ -61,7 +68,8 @@ namespace BankSystem.UI.Forms
 
         private bool PasswordMatch()
         {
-            bool PasswordIsNotEmpty = !string.IsNullOrWhiteSpace(Password_textbox.Text) && !string.IsNullOrWhiteSpace(RepeatPassword_textbox.Text);
+            bool PasswordIsNotEmpty = !string.IsNullOrWhiteSpace(Password_textbox.Text) 
+                && !string.IsNullOrWhiteSpace(RepeatPassword_textbox.Text);
             if(PasswordIsNotEmpty && Password_textbox.Text == RepeatPassword_textbox.Text)
             {
                 PasswordError_label.Visible = false;
@@ -91,5 +99,7 @@ namespace BankSystem.UI.Forms
                 IsValid.Valid(textBox, label);
             }
         }
+
+
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BankSystem.BL.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,7 @@ namespace BankSystem.UI.Forms
 {
     public partial class MainForm : Form
     {
-        public MainForm()
+        public MainForm(UserModel user)
         {
             InitializeComponent();
         }

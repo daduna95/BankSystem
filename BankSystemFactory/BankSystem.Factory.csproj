@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B092CD5E-325C-4745-B5FA-68F074A265E3}</ProjectGuid>
+    <ProjectGuid>{FF50E4D5-E04A-4FDF-8E51-E515B6D1BBBD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BankSystem.BL</RootNamespace>
-    <AssemblyName>BankSystem.BL</AssemblyName>
+    <RootNamespace>BankSystemFactory</RootNamespace>
+    <AssemblyName>BankSystemFactory</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,11 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositorys\UserServiceXmlRepository.cs" />
-    <Compile Include="Service\IUserService.cs" />
-    <Compile Include="Service\RegistrationService.cs" />
+    <Compile Include="UserServiceFactory.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
