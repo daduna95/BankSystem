@@ -2,7 +2,6 @@
 using BankSystem.BL.Repositorys;
 using BankSystem.BL.Service;
 using BankSystem.UI.Common;
-using BankSystem.UI.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -97,7 +96,7 @@ namespace BankSystem.UI.Forms
         {
             if(sender is TextBox textBox && textBox.Tag is Label label)
             {
-                IsValid.Valid(textBox, label);
+                Utils.ValidateInput(textBox, label);
             }
         }
 
