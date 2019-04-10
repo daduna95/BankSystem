@@ -57,8 +57,8 @@ namespace BankSystem.UI.Forms
 
         private void LogIn_button_Click(object sender, EventArgs e)
         {
-            IsValidInput = Util.ValidateInput(UserName_textBox, UserName_label);
-            IsValidInput = Util.ValidateInput(PasswordtextBox, Passwordlabel);
+            IsValidInput = Utils.ValidateInput(UserName_textBox, UserName_label);
+            IsValidInput = Utils.ValidateInput(PasswordtextBox, Passwordlabel);
 
             if (IsValidInput)
             {

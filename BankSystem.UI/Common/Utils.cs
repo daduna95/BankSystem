@@ -6,22 +6,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BankSystem.UI.Utils
+namespace BankSystem.UI.Common
 {
-    public class IsValid
+    internal static class Utils
     {
-        public static bool Valid(TextBox textbox, Label label )
+        public static bool ValidateInput(TextBox textbox, Label label)
         {
-           if(string.IsNullOrWhiteSpace(textbox.Text))
+            if (string.IsNullOrWhiteSpace(textbox.Text))
             {
-                label.ForeColor = Color.DarkRed;
+                label.ForeColor = Color.Maroon;
                 return false;
             }
             else
             {
-                label.ForeColor = Color.Navy;
+                label.ForeColor = Color.FromArgb(56, 104, 181);
                 return true;
             }
         }
     }
+
 }

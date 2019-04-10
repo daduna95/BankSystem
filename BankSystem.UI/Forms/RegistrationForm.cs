@@ -1,6 +1,7 @@
 ﻿using BankSystem.BL.Models;
 using BankSystem.BL.Repositorys;
 using BankSystem.BL.Service;
+using BankSystem.UI.Common;
 using BankSystem.UI.Utils;
 using System;
 using System.Collections.Generic;
@@ -56,12 +57,12 @@ namespace BankSystem.UI.Forms
 
         private bool ValidateInput()
         {
-            bool IsValidateInput = IsValid.Valid(FirstName_textbox, FirstName_label);
-            IsValidateInput = IsValid.Valid(LastName_textBox, LastName_label);
-            IsValidateInput = IsValid.Valid(Email_textbox, Email_label);
-            IsValidateInput = IsValid.Valid(PrivateNumber_textbox, ID_label);
-            IsValidateInput = IsValid.Valid(Password_textbox, Password_label);
-            IsValidateInput = IsValid.Valid(RepeatPassword_textbox, RepeatPassword_label);
+            bool IsValidateInput = Utils.ValidateInput(FirstName_textbox, FirstName_label);
+            IsValidateInput = Utils.ValidateInput(LastName_textBox, LastName_label);
+            IsValidateInput = Utils.ValidateInput(Email_textbox, Email_label);
+            IsValidateInput = Utils.ValidateInput(PrivateNumber_textbox, ID_label);
+            IsValidateInput = Utils.ValidateInput(Password_textbox, Password_label);
+            IsValidateInput = Utils.ValidateInput(RepeatPassword_textbox, RepeatPassword_label);
             IsValidateInput = PasswordMatch();
             return IsValidateInput;
         }
