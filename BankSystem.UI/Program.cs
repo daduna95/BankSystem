@@ -14,7 +14,11 @@ namespace BankSystem.UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LogInForm(new BL.Models.UserModel()));
+            Application.Run(new MainForm(new BL.Models.UserModel
+            {
+                Email = "LevanCubinidze",
+                Password = "123"
+            }));
         }
     }
 }
