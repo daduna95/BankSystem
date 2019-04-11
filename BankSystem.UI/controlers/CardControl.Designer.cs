@@ -30,6 +30,7 @@
         {
             this.Card_pictureBox = new System.Windows.Forms.PictureBox();
             this.CardNumber_label = new System.Windows.Forms.Label();
+            this.CardName_label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Card_pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -39,7 +40,7 @@
             this.Card_pictureBox.ImageLocation = "";
             this.Card_pictureBox.Location = new System.Drawing.Point(0, 0);
             this.Card_pictureBox.Name = "Card_pictureBox";
-            this.Card_pictureBox.Size = new System.Drawing.Size(330, 170);
+            this.Card_pictureBox.Size = new System.Drawing.Size(200, 150);
             this.Card_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Card_pictureBox.TabIndex = 0;
             this.Card_pictureBox.TabStop = false;
@@ -48,24 +49,37 @@
             // 
             this.CardNumber_label.AutoSize = true;
             this.CardNumber_label.BackColor = System.Drawing.Color.Transparent;
-            this.CardNumber_label.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CardNumber_label.ForeColor = System.Drawing.Color.Black;
-            this.CardNumber_label.Location = new System.Drawing.Point(110, 124);
+            this.CardNumber_label.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CardNumber_label.ForeColor = System.Drawing.Color.White;
+            this.CardNumber_label.Location = new System.Drawing.Point(3, 104);
             this.CardNumber_label.Name = "CardNumber_label";
-            this.CardNumber_label.Size = new System.Drawing.Size(96, 16);
+            this.CardNumber_label.Size = new System.Drawing.Size(84, 14);
             this.CardNumber_label.TabIndex = 3;
             this.CardNumber_label.Text = "Card Number";
+            // 
+            // CardName_label
+            // 
+            this.CardName_label.AutoSize = true;
+            this.CardName_label.BackColor = System.Drawing.Color.Transparent;
+            this.CardName_label.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CardName_label.ForeColor = System.Drawing.Color.White;
+            this.CardName_label.Location = new System.Drawing.Point(3, 37);
+            this.CardName_label.Name = "CardName_label";
+            this.CardName_label.Size = new System.Drawing.Size(70, 14);
+            this.CardName_label.TabIndex = 3;
+            this.CardName_label.Text = "Card Type";
             // 
             // CardControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.CardName_label);
             this.Controls.Add(this.CardNumber_label);
             this.Controls.Add(this.Card_pictureBox);
-            this.MaximumSize = new System.Drawing.Size(330, 170);
-            this.MinimumSize = new System.Drawing.Size(330, 170);
+            this.MaximumSize = new System.Drawing.Size(200, 150);
+            this.MinimumSize = new System.Drawing.Size(200, 150);
             this.Name = "CardControl";
-            this.Size = new System.Drawing.Size(330, 170);
+            this.Size = new System.Drawing.Size(200, 150);
             ((System.ComponentModel.ISupportInitialize)(this.Card_pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -76,5 +90,6 @@
 
         private System.Windows.Forms.PictureBox Card_pictureBox;
         private System.Windows.Forms.Label CardNumber_label;
+        private System.Windows.Forms.Label CardName_label;
     }
 }

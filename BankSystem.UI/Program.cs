@@ -23,16 +23,53 @@ namespace BankSystem.UI
                 {
                     new CardModel
                     {
-                        Name = string.Empty,
-                        Id = 0,
-                        CardNumber = string.Empty,
-                        Balance = 0,
-                        Bonus = 0,
-                        DailyLimit = 0,
+                        Name = "Basic",
+                        Id = 1,
+                        CardNumber = "1111 2222 3333 4444",
+                        Balance = 2000,
+                        Bonus = 150,
+                        DailyLimit = 5000,
                         ImageURL = "http://techcentral.co.za/wp-content/uploads/2012/12/A-Standard-Bank-cheque-card-with-integrated-NFC-technology-from-MasterCard.jpg",
-                        MonthlyPayment = 0
+                        MonthlyPayment = 50
+
+                    },
+                    new CardModel
+                    {
+                        Name = "Bronze",
+                        Id = 2,
+                        CardNumber = "4444 1111 2222 3333",
+                        Balance = 3000,
+                        Bonus = 250,
+                        DailyLimit = 10000,
+                        ImageURL = "http://techcentral.co.za/wp-content/uploads/2012/12/A-Standard-Bank-cheque-card-with-integrated-NFC-technology-from-MasterCard.jpg",
+                        MonthlyPayment = 100
+
+                    },
+                    new CardModel
+                    {
+                        Name = "Silver",
+                        Id = 2,
+                        CardNumber = "4444 3333 1111 2222",
+                        Balance = 4000,
+                        Bonus = 350,
+                        DailyLimit = 15000,
+                        ImageURL = "http://techcentral.co.za/wp-content/uploads/2012/12/A-Standard-Bank-cheque-card-with-integrated-NFC-technology-from-MasterCard.jpg",
+                        MonthlyPayment = 150
+
+                    },
+                    new CardModel
+                    {
+                        Name = "Gold",
+                        Id = 2,
+                        CardNumber = "4444 3333 2222 1111",
+                        Balance = 5000,
+                        Bonus = 450,
+                        DailyLimit = 20000,
+                        ImageURL = "http://techcentral.co.za/wp-content/uploads/2012/12/A-Standard-Bank-cheque-card-with-integrated-NFC-technology-from-MasterCard.jpg",
+                        MonthlyPayment = 200
 
                     }
+
                 },
             };
 

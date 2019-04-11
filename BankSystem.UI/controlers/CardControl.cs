@@ -19,7 +19,14 @@ namespace BankSystem.UI.controlers
         {
             InitializeComponent();
             Card = card;
+            CardName_label.Text = Card.Name;
             CardNumber_label.Text = Card.CardNumber;
+            if(CardName_label.Text == "Bronze")
+            CardName_label.ForeColor = Color.SaddleBrown;
+            else if (CardName_label.Text == "Silver")
+                CardName_label.ForeColor = Color.Gray;
+            else if (CardName_label.Text == "Gold")
+                CardName_label.ForeColor = Color.Yellow;
             Card_pictureBox.Load(Card.ImageURL);
             Card_pictureBox.Hide();
             this.BackgroundImage = Card_pictureBox.Image;
