@@ -35,19 +35,24 @@
             // 
             // Card_pictureBox
             // 
-            this.Card_pictureBox.Location = new System.Drawing.Point(4, 4);
+            this.Card_pictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Card_pictureBox.ImageLocation = "";
+            this.Card_pictureBox.Location = new System.Drawing.Point(0, 0);
             this.Card_pictureBox.Name = "Card_pictureBox";
-            this.Card_pictureBox.Size = new System.Drawing.Size(323, 163);
+            this.Card_pictureBox.Size = new System.Drawing.Size(330, 170);
+            this.Card_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Card_pictureBox.TabIndex = 0;
             this.Card_pictureBox.TabStop = false;
             // 
             // CardNumber_label
             // 
             this.CardNumber_label.AutoSize = true;
-            this.CardNumber_label.Font = new System.Drawing.Font("Sylfaen", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CardNumber_label.Location = new System.Drawing.Point(17, 128);
+            this.CardNumber_label.BackColor = System.Drawing.Color.Transparent;
+            this.CardNumber_label.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CardNumber_label.ForeColor = System.Drawing.Color.Black;
+            this.CardNumber_label.Location = new System.Drawing.Point(110, 124);
             this.CardNumber_label.Name = "CardNumber_label";
-            this.CardNumber_label.Size = new System.Drawing.Size(110, 22);
+            this.CardNumber_label.Size = new System.Drawing.Size(96, 16);
             this.CardNumber_label.TabIndex = 3;
             this.CardNumber_label.Text = "Card Number";
             // 

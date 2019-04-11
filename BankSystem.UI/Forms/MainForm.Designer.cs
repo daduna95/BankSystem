@@ -30,11 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.Menupanel = new System.Windows.Forms.Panel();
+            this.Home_button = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LastName_label = new System.Windows.Forms.Label();
             this.FirstName_label = new System.Windows.Forms.Label();
-            this.Home_button = new System.Windows.Forms.Button();
+            this.contentPanel = new System.Windows.Forms.Panel();
             this.Menupanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -53,6 +54,25 @@
             this.Menupanel.Name = "Menupanel";
             this.Menupanel.Size = new System.Drawing.Size(220, 450);
             this.Menupanel.TabIndex = 0;
+            // 
+            // Home_button
+            // 
+            this.Home_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.Home_button.FlatAppearance.BorderSize = 0;
+            this.Home_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Home_button.Font = new System.Drawing.Font("Sylfaen", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Home_button.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Home_button.Image = ((System.Drawing.Image)(resources.GetObject("Home_button.Image")));
+            this.Home_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Home_button.Location = new System.Drawing.Point(3, 254);
+            this.Home_button.MaximumSize = new System.Drawing.Size(213, 41);
+            this.Home_button.MinimumSize = new System.Drawing.Size(213, 41);
+            this.Home_button.Name = "Home_button";
+            this.Home_button.Size = new System.Drawing.Size(213, 41);
+            this.Home_button.TabIndex = 2;
+            this.Home_button.Text = "Home";
+            this.Home_button.UseVisualStyleBackColor = false;
+            this.Home_button.Click += new System.EventHandler(this.Home_button_Click);
             // 
             // pictureBox2
             // 
@@ -111,29 +131,20 @@
             this.FirstName_label.Text = "Name";
             this.FirstName_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Home_button
+            // contentPanel
             // 
-            this.Home_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.Home_button.FlatAppearance.BorderSize = 0;
-            this.Home_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Home_button.Font = new System.Drawing.Font("Sylfaen", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Home_button.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Home_button.Image = ((System.Drawing.Image)(resources.GetObject("Home_button.Image")));
-            this.Home_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Home_button.Location = new System.Drawing.Point(3, 254);
-            this.Home_button.MaximumSize = new System.Drawing.Size(213, 41);
-            this.Home_button.MinimumSize = new System.Drawing.Size(213, 41);
-            this.Home_button.Name = "Home_button";
-            this.Home_button.Size = new System.Drawing.Size(213, 41);
-            this.Home_button.TabIndex = 2;
-            this.Home_button.Text = "Home";
-            this.Home_button.UseVisualStyleBackColor = false;
+            this.contentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.contentPanel.Location = new System.Drawing.Point(220, 0);
+            this.contentPanel.Name = "contentPanel";
+            this.contentPanel.Size = new System.Drawing.Size(580, 450);
+            this.contentPanel.TabIndex = 1;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.contentPanel);
             this.Controls.Add(this.Menupanel);
             this.Name = "MainForm";
             this.Text = "MainForm";
@@ -153,5 +164,6 @@
         private System.Windows.Forms.Label FirstName_label;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button Home_button;
+        private System.Windows.Forms.Panel contentPanel;
     }
 }

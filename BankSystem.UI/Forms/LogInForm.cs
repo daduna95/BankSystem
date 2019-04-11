@@ -23,7 +23,7 @@ namespace BankSystem.UI.Forms
         {
             InitializeComponent();
             UserName_textBox.Tag = UserName_label;
-            PasswordtextBox.Tag = Password_label;
+            Password_textBox.Tag = Password_label;
         }
 
         private void LoginUser(UserModel user)
@@ -57,13 +57,13 @@ namespace BankSystem.UI.Forms
         private void LogIn_button_Click(object sender, EventArgs e)
         {
             IsValidInput = Utils.ValidateInput(UserName_textBox, UserName_label);
-            IsValidInput = Utils.ValidateInput(PasswordtextBox, Passwordlabel);
+            IsValidInput = Utils.ValidateInput(Password_textBox, Passwordlabel);
 
             if (IsValidInput)
             {
                 var user = new UserModel
                 {
-                    Password = PasswordtextBox.Text,
+                    Password = Password_textBox.Text,
                     Email = UserName_textBox.Text,
                 };
                 LoginUser(user);

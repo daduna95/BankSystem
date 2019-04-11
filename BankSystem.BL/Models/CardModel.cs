@@ -17,5 +17,12 @@ namespace BankSystem.BL.Models
         public decimal Bonus { get; set; }
         public decimal DailyLimit { get; set; }
 
+
+        public CardModel()
+        {
+            ImageURL = string.Empty;
+            CardNumber = string.Empty;
+            Name = string.Empty;
+        }
     }
 }

@@ -13,10 +13,18 @@ namespace BankSystem.UI.controlers
 {
     public partial class CardControl : UserControl
     {
+        public CardModel Card { get; set; }
         
         public CardControl(CardModel card)
         {
             InitializeComponent();
+            Card = card;
+            CardNumber_label.Text = Card.CardNumber;
+            Card_pictureBox.Load(Card.ImageURL);
+            Card_pictureBox.Hide();
+            this.BackgroundImage = Card_pictureBox.Image;
+            this.BackgroundImageLayout = ImageLayout.Zoom;
+
         }
        
         
