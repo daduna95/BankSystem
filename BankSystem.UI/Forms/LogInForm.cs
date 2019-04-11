@@ -23,7 +23,7 @@ namespace BankSystem.UI.Forms
         {
             InitializeComponent();
             UserName_textBox.Tag = UserName_label;
-            PasswordtextBox.Tag = Password_label;
+            Password_textBox.Tag = Password_label;
         }
 
         private void LoginUser(UserModel user)
