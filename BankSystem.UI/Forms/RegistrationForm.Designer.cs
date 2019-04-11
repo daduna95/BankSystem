@@ -124,7 +124,7 @@
             // 
             this.FirstName_label.AutoSize = true;
             this.FirstName_label.Font = new System.Drawing.Font("Sylfaen", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FirstName_label.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.FirstName_label.ForeColor = System.Drawing.Color.RoyalBlue;
             this.FirstName_label.Location = new System.Drawing.Point(172, 176);
             this.FirstName_label.Name = "FirstName_label";
             this.FirstName_label.Size = new System.Drawing.Size(94, 22);
@@ -135,7 +135,7 @@
             // 
             this.LastName_label.AutoSize = true;
             this.LastName_label.Font = new System.Drawing.Font("Sylfaen", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LastName_label.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.LastName_label.ForeColor = System.Drawing.Color.RoyalBlue;
             this.LastName_label.Location = new System.Drawing.Point(171, 236);
             this.LastName_label.Name = "LastName_label";
             this.LastName_label.Size = new System.Drawing.Size(89, 22);
@@ -146,7 +146,7 @@
             // 
             this.Email_label.AutoSize = true;
             this.Email_label.Font = new System.Drawing.Font("Sylfaen", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Email_label.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.Email_label.ForeColor = System.Drawing.Color.RoyalBlue;
             this.Email_label.Location = new System.Drawing.Point(171, 295);
             this.Email_label.Name = "Email_label";
             this.Email_label.Size = new System.Drawing.Size(54, 22);
@@ -157,7 +157,7 @@
             // 
             this.ID_label.AutoSize = true;
             this.ID_label.Font = new System.Drawing.Font("Sylfaen", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ID_label.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.ID_label.ForeColor = System.Drawing.Color.RoyalBlue;
             this.ID_label.Location = new System.Drawing.Point(172, 354);
             this.ID_label.Name = "ID_label";
             this.ID_label.Size = new System.Drawing.Size(129, 22);
@@ -168,7 +168,7 @@
             // 
             this.Password_label.AutoSize = true;
             this.Password_label.Font = new System.Drawing.Font("Sylfaen", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Password_label.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.Password_label.ForeColor = System.Drawing.Color.RoyalBlue;
             this.Password_label.Location = new System.Drawing.Point(172, 414);
             this.Password_label.Name = "Password_label";
             this.Password_label.Size = new System.Drawing.Size(80, 22);
@@ -179,7 +179,7 @@
             // 
             this.RepeatPassword_label.AutoSize = true;
             this.RepeatPassword_label.Font = new System.Drawing.Font("Sylfaen", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RepeatPassword_label.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.RepeatPassword_label.ForeColor = System.Drawing.Color.RoyalBlue;
             this.RepeatPassword_label.Location = new System.Drawing.Point(171, 474);
             this.RepeatPassword_label.Name = "RepeatPassword_label";
             this.RepeatPassword_label.Size = new System.Drawing.Size(135, 22);

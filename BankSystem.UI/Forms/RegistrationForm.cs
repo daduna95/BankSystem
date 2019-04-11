@@ -91,13 +91,11 @@ namespace BankSystem.UI.Forms
             }
         }
 
-
-
         private void Textbox_TextChanged(object sender, EventArgs e)
         {
             if(sender is TextBox textBox && textBox.Tag is Label label)
             {
-                IsValid.Valid(textBox, label);
+                Utils.ValidateInput(textBox, label);
             }
         }
 

@@ -33,7 +33,7 @@
             this.UserName_textBox = new System.Windows.Forms.TextBox();
             this.UserName_label = new System.Windows.Forms.Label();
             this.Password_label = new System.Windows.Forms.Label();
-            this.PasswordtextBox = new System.Windows.Forms.TextBox();
+            this.Password_textBox = new System.Windows.Forms.TextBox();
             this.Passwordlabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Registration_Button = new System.Windows.Forms.Label();
@@ -68,7 +68,7 @@
             // 
             this.UserName_label.AutoSize = true;
             this.UserName_label.Font = new System.Drawing.Font("Sylfaen", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserName_label.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.UserName_label.ForeColor = System.Drawing.Color.RoyalBlue;
             this.UserName_label.Location = new System.Drawing.Point(170, 201);
             this.UserName_label.Name = "UserName_label";
             this.UserName_label.Size = new System.Drawing.Size(93, 22);
@@ -79,22 +79,22 @@
             // 
             this.Password_label.AutoSize = true;
             this.Password_label.Font = new System.Drawing.Font("Sylfaen", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Password_label.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.Password_label.ForeColor = System.Drawing.Color.RoyalBlue;
             this.Password_label.Location = new System.Drawing.Point(170, 260);
             this.Password_label.Name = "Password_label";
             this.Password_label.Size = new System.Drawing.Size(80, 22);
             this.Password_label.TabIndex = 3;
             this.Password_label.Text = "Password";
             // 
-            // PasswordtextBox
+            // Password_textBox
             // 
-            this.PasswordtextBox.Font = new System.Drawing.Font("Sylfaen", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordtextBox.Location = new System.Drawing.Point(168, 285);
-            this.PasswordtextBox.Name = "PasswordtextBox";
-            this.PasswordtextBox.Size = new System.Drawing.Size(300, 33);
-            this.PasswordtextBox.TabIndex = 2;
-            this.PasswordtextBox.UseSystemPasswordChar = true;
-            this.PasswordtextBox.TextChanged += new System.EventHandler(this.TextBox_TextChanged);
+            this.Password_textBox.Font = new System.Drawing.Font("Sylfaen", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Password_textBox.Location = new System.Drawing.Point(168, 285);
+            this.Password_textBox.Name = "Password_textBox";
+            this.Password_textBox.Size = new System.Drawing.Size(300, 33);
+            this.Password_textBox.TabIndex = 2;
+            this.Password_textBox.UseSystemPasswordChar = true;
+            this.Password_textBox.TextChanged += new System.EventHandler(this.TextBox_TextChanged);
             // 
             // Passwordlabel
             // 
@@ -154,7 +154,7 @@
             this.Controls.Add(this.Passwordlabel);
             this.Controls.Add(this.Password_label);
             this.Controls.Add(this.UserName_label);
-            this.Controls.Add(this.PasswordtextBox);
+            this.Controls.Add(this.Password_textBox);
             this.Controls.Add(this.UserName_textBox);
             this.Controls.Add(this.LogIn_button);
             this.MaximumSize = new System.Drawing.Size(650, 580);
@@ -174,7 +174,7 @@
         private System.Windows.Forms.TextBox UserName_textBox;
         private System.Windows.Forms.Label UserName_label;
         private System.Windows.Forms.Label Password_label;
-        private System.Windows.Forms.TextBox PasswordtextBox;
+        private System.Windows.Forms.TextBox Password_textBox;
         private System.Windows.Forms.Label Passwordlabel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label Registration_Button;

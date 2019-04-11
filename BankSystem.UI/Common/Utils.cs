@@ -19,7 +19,7 @@ namespace BankSystem.UI.Common
             }
             else
             {
-                label.ForeColor = Color.FromArgb(56, 104, 181);
+                label.ForeColor = Color.MidnightBlue;
                 return true;
             }
         }
