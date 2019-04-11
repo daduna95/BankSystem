@@ -36,14 +36,14 @@
             // 
             // Card_pictureBox
             // 
-            this.Card_pictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Card_pictureBox.ImageLocation = "";
             this.Card_pictureBox.Location = new System.Drawing.Point(0, 0);
             this.Card_pictureBox.Name = "Card_pictureBox";
-            this.Card_pictureBox.Size = new System.Drawing.Size(200, 150);
+            this.Card_pictureBox.Size = new System.Drawing.Size(200, 101);
             this.Card_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Card_pictureBox.TabIndex = 0;
             this.Card_pictureBox.TabStop = false;
+            this.Card_pictureBox.Click += new System.EventHandler(this.Card_Click);
             // 
             // CardNumber_label
             // 
@@ -80,6 +80,8 @@
             this.MinimumSize = new System.Drawing.Size(200, 150);
             this.Name = "CardControl";
             this.Size = new System.Drawing.Size(200, 150);
+            this.Load += new System.EventHandler(this.CardControl_Load);
+            this.Click += new System.EventHandler(this.Card_Click);
             ((System.ComponentModel.ISupportInitialize)(this.Card_pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

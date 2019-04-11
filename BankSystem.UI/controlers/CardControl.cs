@@ -8,13 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BankSystem.BL.Models;
+using BankSystem.BL.Service;
+using BankSystem.BL.Repositorys;
+using BankSystem.UI.Forms;
 
 namespace BankSystem.UI.controlers
 {
     public partial class CardControl : UserControl
     {
         public CardModel Card { get; set; }
-        
+     
         public CardControl(CardModel card)
         {
             InitializeComponent();
@@ -27,13 +30,26 @@ namespace BankSystem.UI.controlers
                 CardName_label.ForeColor = Color.Gray;
             else if (CardName_label.Text == "Gold")
                 CardName_label.ForeColor = Color.Yellow;
-            Card_pictureBox.Load(Card.ImageURL);
+
+            Card_pictureBox.LoadAsync(Card.ImageURL);
             Card_pictureBox.Hide();
             this.BackgroundImage = Card_pictureBox.Image;
             this.BackgroundImageLayout = ImageLayout.Zoom;
 
         }
-       
-        
+
+
+
+        private void Card_Click(object sender, EventArgs e)
+        {
+            var transactionForm = new TransactionsForm();
+            transactionForm.Show();
+        }
+
+        private  void  CardControl_Load(object sender, EventArgs e)
+        {
+         
+
+        }
     }
 }

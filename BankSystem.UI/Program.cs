@@ -29,7 +29,7 @@ namespace BankSystem.UI
                         Balance = 2000,
                         Bonus = 150,
                         DailyLimit = 5000,
-                        ImageURL = "http://techcentral.co.za/wp-content/uploads/2012/12/A-Standard-Bank-cheque-card-with-integrated-NFC-technology-from-MasterCard.jpg",
+                        ImageURL = "Card.jpg",
                         MonthlyPayment = 50
 
                     },
@@ -41,7 +41,7 @@ namespace BankSystem.UI
                         Balance = 3000,
                         Bonus = 250,
                         DailyLimit = 10000,
-                        ImageURL = "http://techcentral.co.za/wp-content/uploads/2012/12/A-Standard-Bank-cheque-card-with-integrated-NFC-technology-from-MasterCard.jpg",
+                        ImageURL = "Card.jpg",
                         MonthlyPayment = 100
 
                     },
@@ -53,7 +53,7 @@ namespace BankSystem.UI
                         Balance = 4000,
                         Bonus = 350,
                         DailyLimit = 15000,
-                        ImageURL = "http://techcentral.co.za/wp-content/uploads/2012/12/A-Standard-Bank-cheque-card-with-integrated-NFC-technology-from-MasterCard.jpg",
+                        ImageURL = "Card.jpg",
                         MonthlyPayment = 150
 
                     },
@@ -65,7 +65,7 @@ namespace BankSystem.UI
                         Balance = 5000,
                         Bonus = 450,
                         DailyLimit = 20000,
-                        ImageURL = "http://techcentral.co.za/wp-content/uploads/2012/12/A-Standard-Bank-cheque-card-with-integrated-NFC-technology-from-MasterCard.jpg",
+                        ImageURL = "Card.jpg",
                         MonthlyPayment = 200
 
                     }
