@@ -14,7 +14,7 @@ namespace BankSystem.UI.Forms
 {
     public partial class MainForm : Form
     {
-        public UserModel User { get; }
+        public UserModel User { get;  }
         
         bool isCollapsed = false;
         int maxWidth = 205;
@@ -24,6 +24,8 @@ namespace BankSystem.UI.Forms
         public MainForm(UserModel user)
         {
             InitializeComponent();
+            User = user;
+
             FirstName_label.Text = user.FirstName;
             LastName_label.Text = user.LastName;
 
@@ -88,15 +90,14 @@ namespace BankSystem.UI.Forms
                 FirstName_label.Visible = false;
                 LastName_label.Visible = false;
             }
-            User = user;
            
         }
 
 
         private void Home_button_Click(object sender, EventArgs e)
         {
-            contentPanel.Controls.Clear();
-            contentPanel.Controls.Add(new HomeControl(User));
+           contentPanel.Controls.Clear();
+           contentPanel.Controls.Add(new HomeControl(User));
      
         }
     }

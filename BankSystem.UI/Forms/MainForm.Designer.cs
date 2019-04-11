@@ -40,6 +40,7 @@
             this.LastName_label = new System.Windows.Forms.Label();
             this.FirstName_label = new System.Windows.Forms.Label();
             this.Menu_Panel_timer = new System.Windows.Forms.Timer(this.components);
+            this.contentPanel = new System.Windows.Forms.Panel();
             this.Menu_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.User_pictureBox)).BeginInit();
             this.SuspendLayout();
@@ -163,6 +164,7 @@
             this.Home_button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Home_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Home_button.UseVisualStyleBackColor = false;
+            this.Home_button.Click += new System.EventHandler(this.Home_button_Click);
             // 
             // User_pictureBox
             // 
@@ -173,7 +175,7 @@
             this.User_pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("User_pictureBox.Image")));
             this.User_pictureBox.Location = new System.Drawing.Point(47, 61);
             this.User_pictureBox.Name = "User_pictureBox";
-            this.User_pictureBox.Size = new System.Drawing.Size(110, 110);
+            this.User_pictureBox.Size = new System.Drawing.Size(104, 104);
             this.User_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.User_pictureBox.TabIndex = 1;
             this.User_pictureBox.TabStop = false;
@@ -208,12 +210,12 @@
             this.FirstName_label.Text = "Name";
             this.FirstName_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Menu_Panel_timer
+            // contentPanel
             // 
             this.contentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contentPanel.Location = new System.Drawing.Point(220, 0);
+            this.contentPanel.Location = new System.Drawing.Point(205, 0);
             this.contentPanel.Name = "contentPanel";
-            this.contentPanel.Size = new System.Drawing.Size(580, 450);
+            this.contentPanel.Size = new System.Drawing.Size(579, 561);
             this.contentPanel.TabIndex = 1;
             // 
             // MainForm
@@ -221,6 +223,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.contentPanel);
             this.Controls.Add(this.Menu_panel);
             this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "MainForm";
@@ -244,5 +247,6 @@
         private System.Windows.Forms.Button By_Card_button;
         private System.Windows.Forms.Button Menu_button;
         private System.Windows.Forms.Timer Menu_Panel_timer;
+        private System.Windows.Forms.Panel contentPanel;
     }
 }
