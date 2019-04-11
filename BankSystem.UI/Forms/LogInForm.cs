@@ -57,14 +57,14 @@ namespace BankSystem.UI.Forms
         private void LogIn_button_Click(object sender, EventArgs e)
         {
             IsValidInput = Utils.ValidateInput(UserName_textBox, UserName_label);
-            IsValidInput = Utils.ValidateInput(PasswordtextBox, Passwordlabel);
+            IsValidInput = Utils.ValidateInput(Password_textBox, Password_label);
 
             if (IsValidInput)
             {
                 var user = new UserModel
                 {
-                    Password = PasswordtextBox.Text,
                     Email = UserName_textBox.Text,
+                    Password = Password_textBox.Text,
                 };
                 LoginUser(user);
             }
