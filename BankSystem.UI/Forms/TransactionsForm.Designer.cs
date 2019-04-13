@@ -241,7 +241,7 @@
             this.SMSBank_checkBox.TabIndex = 7;
             this.SMSBank_checkBox.Text = "Activate SMS Bank";
             this.SMSBank_checkBox.UseVisualStyleBackColor = true;
-            this.SMSBank_checkBox.CheckedChanged += new System.EventHandler(this.SMSBank_checkBox_CheckedChanged);
+       
             this.SMSBank_checkBox.Click += new System.EventHandler(this.SMSBank_checkBox_Click);
             // 
             // TransactionsForm

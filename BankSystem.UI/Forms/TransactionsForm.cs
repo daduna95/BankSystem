@@ -28,7 +28,7 @@ namespace BankSystem.UI.Forms
             BalanceChangeable_label.Text = Card.Balance.ToString();
             DailyLimitChangeable_label.Text = Card.DailyLimit.ToString();
             BonusChangeable_label.Text = Card.Bonus.ToString();
-            MonthlyPaymentChangeable_label.Text = Card.Bonus.ToString();
+            MonthlyPaymentChangeable_label.Text = Card.MonthlyPayment.ToString();
             TransactionFrom_layoutPanel.BackgroundImage = Properties.Resources.Card;
             TransactionFrom_layoutPanel.BackgroundImageLayout = ImageLayout.Zoom;
 
@@ -55,15 +55,18 @@ namespace BankSystem.UI.Forms
                 }
             }
         }
-
-        private void SMSBank_checkBox_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void SMSBank_checkBox_Click(object sender, EventArgs e)
         {
-
+            if (SMSBank_checkBox.Checked)
+            {
+                MessageBox.Show("This will charge you with monthly payment of 10GEL", "Activating SMS Bank", MessageBoxButtons.YesNo);
+                Card.MonthlyPayment += 10;
+                MonthlyPaymentChangeable_label.Text = Card.MonthlyPayment.ToString();
+            }
         }
+
+      
+
+       
     }
 }
