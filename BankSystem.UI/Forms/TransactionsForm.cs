@@ -55,5 +55,15 @@ namespace BankSystem.UI.Forms
                 }
             }
         }
+
+        private void SMSBank_checkBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SMSBank_checkBox_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

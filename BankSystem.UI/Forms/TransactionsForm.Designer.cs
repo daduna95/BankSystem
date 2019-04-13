@@ -47,6 +47,7 @@
             this.DailyLimitChangeable_label = new System.Windows.Forms.Label();
             this.BonusChangeable_label = new System.Windows.Forms.Label();
             this.MonthlyPaymentChangeable_label = new System.Windows.Forms.Label();
+            this.SMSBank_checkBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // TransactionFrom_layoutPanel
@@ -230,11 +231,25 @@
             this.MonthlyPaymentChangeable_label.TabIndex = 0;
             this.MonthlyPaymentChangeable_label.Text = "Monthly Payment";
             // 
+            // SMSBank_checkBox
+            // 
+            this.SMSBank_checkBox.AutoSize = true;
+            this.SMSBank_checkBox.Font = new System.Drawing.Font("Sylfaen", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SMSBank_checkBox.Location = new System.Drawing.Point(16, 382);
+            this.SMSBank_checkBox.Name = "SMSBank_checkBox";
+            this.SMSBank_checkBox.Size = new System.Drawing.Size(131, 22);
+            this.SMSBank_checkBox.TabIndex = 7;
+            this.SMSBank_checkBox.Text = "Activate SMS Bank";
+            this.SMSBank_checkBox.UseVisualStyleBackColor = true;
+            this.SMSBank_checkBox.CheckedChanged += new System.EventHandler(this.SMSBank_checkBox_CheckedChanged);
+            this.SMSBank_checkBox.Click += new System.EventHandler(this.SMSBank_checkBox_Click);
+            // 
             // TransactionsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.SMSBank_checkBox);
             this.Controls.Add(this.AmountConfirmation_button);
             this.Controls.Add(this.Amount_textBox);
             this.Controls.Add(this.Amount_label);
@@ -282,5 +297,6 @@
         private System.Windows.Forms.Label DailyLimitChangeable_label;
         private System.Windows.Forms.Label BonusChangeable_label;
         private System.Windows.Forms.Label MonthlyPaymentChangeable_label;
+        private System.Windows.Forms.CheckBox SMSBank_checkBox;
     }
 }
