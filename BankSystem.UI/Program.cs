@@ -21,6 +21,8 @@ namespace BankSystem.UI
             {
                 Email = "LevanCubinidze",
                 Password = "123",
+                FirstName = "Levani",
+                LastName = "Chubinidze",
                 Cards = new List<CardModel>
                 {
                     new CardModel

@@ -41,12 +41,37 @@ namespace BankSystem.UI.Forms
             label.Left = Menu_panel.Width / 2 - x;
         }
 
-        private void Sandwich_button_Click(object sender, EventArgs e)
+        private void Menu_button_Click(object sender, EventArgs e)
         {
             Menu_Panel_timer.Start();
+            
         }
 
-        private void Timer_Tick(object sender, EventArgs e)
+        private void UserVisible(bool visible)
+        {
+            if (visible)
+            {
+                User_pictureBox.Visible = true;
+                FirstName_label.Visible = true;
+                LastName_label.Visible = true;
+            }
+            else
+            {
+                User_pictureBox.Visible = false;
+                FirstName_label.Visible = false;
+                LastName_label.Visible = false;
+            }
+           
+        }
+
+
+        private void Home_button_Click(object sender, EventArgs e)
+        {
+           contentPanel.Controls.Clear();
+           contentPanel.Controls.Add(new HomeControl(User));
+        }
+
+        private void Menu_Panel_timer_Tick(object sender, EventArgs e)
         {
             if (isCollapsed)
             {
@@ -74,31 +99,6 @@ namespace BankSystem.UI.Forms
                     Menu_Panel_timer.Stop();
                 }
             }
-        }
-
-        private void UserVisible(bool visible)
-        {
-            if (visible)
-            {
-                User_pictureBox.Visible = true;
-                FirstName_label.Visible = true;
-                LastName_label.Visible = true;
-            }
-            else
-            {
-                User_pictureBox.Visible = false;
-                FirstName_label.Visible = false;
-                LastName_label.Visible = false;
-            }
-           
-        }
-
-
-        private void Home_button_Click(object sender, EventArgs e)
-        {
-           contentPanel.Controls.Clear();
-           contentPanel.Controls.Add(new HomeControl(User));
-     
         }
     }
 }

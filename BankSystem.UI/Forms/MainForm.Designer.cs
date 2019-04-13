@@ -79,7 +79,7 @@
             this.Menu_button.Size = new System.Drawing.Size(38, 36);
             this.Menu_button.TabIndex = 3;
             this.Menu_button.UseVisualStyleBackColor = false;
-            this.Menu_button.Click += new System.EventHandler(this.Sandwich_button_Click);
+            this.Menu_button.Click += new System.EventHandler(this.Menu_button_Click);
             // 
             // button3
             // 
@@ -209,6 +209,11 @@
             this.FirstName_label.TabIndex = 0;
             this.FirstName_label.Text = "Name";
             this.FirstName_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Menu_Panel_timer
+            // 
+            this.Menu_Panel_timer.Interval = 10;
+            this.Menu_Panel_timer.Tick += new System.EventHandler(this.Menu_Panel_timer_Tick);
             // 
             // contentPanel
             // 
