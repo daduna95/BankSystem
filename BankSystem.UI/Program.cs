@@ -66,7 +66,7 @@ namespace BankSystem.UI
                         Name = "Gold",
                         Id = 2,
                         CardNumber = "4444 3333 2222 1111",
-                        Balance = 5000,
+                        Balance = 50000,
                         Bonus = 450,
                         DailyLimit = 20000,
                         Color = Color.Gold,

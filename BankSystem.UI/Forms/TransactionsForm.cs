@@ -43,14 +43,14 @@ namespace BankSystem.UI.Forms
             if (cards.Any(c => c == CardNumber_textBox.Text))
             {
 
-                if (Card.Balance > int.Parse(Amount_textBox.Text))
+                if (Card.Balance > int.Parse(Amount_textBox.Text) && int.Parse(Amount_textBox.Text) <= Card.DailyLimit)
                 {
                     Card.Balance -= int.Parse(Amount_textBox.Text);
                     BalanceChangeable_label.Text = Card.Balance.ToString(); 
                 }
                 else
                 {
-                    MessageBox.Show("Not enough money on balance. Enter different ammount!");
+                    MessageBox.Show("Not enough money on balance or ammount exceeded daily limit. Enter different ammount!");
                     Amount_textBox.Clear();
                 }
             }
