@@ -2,6 +2,7 @@
 using BankSystem.UI.Forms;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace BankSystem.UI
@@ -14,6 +15,7 @@ namespace BankSystem.UI
         [STAThread]
         static void Main()
         {
+            
             // ToDo : User is Test Data. Needs Remove
             var user = new BL.Models.UserModel
             {
@@ -29,7 +31,7 @@ namespace BankSystem.UI
                         Balance = 2000,
                         Bonus = 150,
                         DailyLimit = 5000,
-                        ImageURL = "Card.jpg",
+                        Color = Color.Blue,
                         MonthlyPayment = 50
 
                     },
@@ -41,7 +43,7 @@ namespace BankSystem.UI
                         Balance = 3000,
                         Bonus = 250,
                         DailyLimit = 10000,
-                        ImageURL = "Card.jpg",
+                        Color = Color.Tan,
                         MonthlyPayment = 100
 
                     },
@@ -53,7 +55,7 @@ namespace BankSystem.UI
                         Balance = 4000,
                         Bonus = 350,
                         DailyLimit = 15000,
-                        ImageURL = "Card.jpg",
+                        Color = Color.Silver,
                         MonthlyPayment = 150
 
                     },
@@ -65,7 +67,7 @@ namespace BankSystem.UI
                         Balance = 5000,
                         Bonus = 450,
                         DailyLimit = 20000,
-                        ImageURL = "Card.jpg",
+                        Color = Color.Gold,
                         MonthlyPayment = 200
 
                     }

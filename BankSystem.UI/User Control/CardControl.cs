@@ -24,16 +24,8 @@ namespace BankSystem.UI.controlers
             Card = card;
             CardName_label.Text = Card.Name;
             CardNumber_label.Text = Card.CardNumber;
-            if(CardName_label.Text == "Bronze")
-            CardName_label.ForeColor = Color.SaddleBrown;
-            else if (CardName_label.Text == "Silver")
-                CardName_label.ForeColor = Color.Gray;
-            else if (CardName_label.Text == "Gold")
-                CardName_label.ForeColor = Color.Yellow;
-
-            Card_pictureBox.LoadAsync(Card.ImageURL);
-            Card_pictureBox.Hide();
-            this.BackgroundImage = Card_pictureBox.Image;
+            CardName_label.ForeColor = Card.Color;
+            this.BackgroundImage = Properties.Resources.Card;
             this.BackgroundImageLayout = ImageLayout.Zoom;
 
         }
@@ -44,12 +36,6 @@ namespace BankSystem.UI.controlers
         {
             var transactionForm = new TransactionsForm();
             transactionForm.Show();
-        }
-
-        private  void  CardControl_Load(object sender, EventArgs e)
-        {
-         
-
         }
     }
 }

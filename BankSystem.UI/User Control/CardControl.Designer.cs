@@ -28,22 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Card_pictureBox = new System.Windows.Forms.PictureBox();
             this.CardNumber_label = new System.Windows.Forms.Label();
             this.CardName_label = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.Card_pictureBox)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Card_pictureBox
-            // 
-            this.Card_pictureBox.ImageLocation = "";
-            this.Card_pictureBox.Location = new System.Drawing.Point(0, 0);
-            this.Card_pictureBox.Name = "Card_pictureBox";
-            this.Card_pictureBox.Size = new System.Drawing.Size(200, 101);
-            this.Card_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Card_pictureBox.TabIndex = 0;
-            this.Card_pictureBox.TabStop = false;
-            this.Card_pictureBox.Click += new System.EventHandler(this.Card_Click);
             // 
             // CardNumber_label
             // 
@@ -75,22 +62,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.CardName_label);
             this.Controls.Add(this.CardNumber_label);
-            this.Controls.Add(this.Card_pictureBox);
             this.MaximumSize = new System.Drawing.Size(200, 150);
             this.MinimumSize = new System.Drawing.Size(200, 150);
             this.Name = "CardControl";
             this.Size = new System.Drawing.Size(200, 150);
-            this.Load += new System.EventHandler(this.CardControl_Load);
             this.Click += new System.EventHandler(this.Card_Click);
-            ((System.ComponentModel.ISupportInitialize)(this.Card_pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox Card_pictureBox;
         private System.Windows.Forms.Label CardNumber_label;
         private System.Windows.Forms.Label CardName_label;
     }
