@@ -13,6 +13,7 @@ namespace BankSystem.UI.Forms
 {
     public partial class TransactionsForm : Form
     {
+      
         List<string> cards = new List<string>
         {
             "1234",
@@ -64,9 +65,29 @@ namespace BankSystem.UI.Forms
                 MonthlyPaymentChangeable_label.Text = Card.MonthlyPayment.ToString();
             }
         }
+        //TODO: Need to fix code and get rid of If Else
+        private void Currency_comboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (Currency_comboBox.Text == "Gel")
+            {
+                BalanceChangeable_label.Text = Card.Balance.ToString();
+            }
+            else if (Currency_comboBox.Text == "USD")
+            {
+                BalanceChangeable_label.Text = Card.Balance.ToString();
+                BalanceChangeable_label.Text = (Card.Balance * 2).ToString();
+            }
+            else if (Currency_comboBox.Text == "Euro")
+            {
+                BalanceChangeable_label.Text = Card.Balance.ToString();
+                BalanceChangeable_label.Text = (Card.Balance * 3).ToString();
+            }
+            else
+            {
+                BalanceChangeable_label.Text = Card.Balance.ToString();
+                BalanceChangeable_label.Text = (Card.Balance * 4).ToString();
+            }
 
-      
-
-       
+        }
     }
 }
