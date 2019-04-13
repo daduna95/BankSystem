@@ -34,8 +34,9 @@ namespace BankSystem.UI.controlers
 
         private void Card_Click(object sender, EventArgs e)
         {
-            var transactionForm = new TransactionsForm();
+            var transactionForm = new TransactionsForm(Card);
             transactionForm.Show();
+            
         }
     }
 }
