@@ -46,16 +46,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\Utils.cs" />
-    <Compile Include="controlers\CardControl.cs">
+    <Compile Include="User Control\CardControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="controlers\CardControl.Designer.cs">
+    <Compile Include="User Control\CardControl.Designer.cs">
       <DependentUpon>CardControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="controlers\HomeControl.cs">
+    <Compile Include="User Control\HomeControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="controlers\HomeControl.Designer.cs">
+    <Compile Include="User Control\HomeControl.Designer.cs">
       <DependentUpon>HomeControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\LogInForm.cs">
@@ -84,10 +84,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="controlers\CardControl.resx">
+    <EmbeddedResource Include="User Control\CardControl.resx">
       <DependentUpon>CardControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="controlers\HomeControl.resx">
+    <EmbeddedResource Include="User Control\HomeControl.resx">
       <DependentUpon>HomeControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LogInForm.resx">
