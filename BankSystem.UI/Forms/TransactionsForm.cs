@@ -51,6 +51,7 @@ namespace BankSystem.UI.Forms
                 else
                 {
                     MessageBox.Show("Not enough money on balance. Enter different ammount!");
+                    Amount_textBox.Clear();
                 }
             }
         }
