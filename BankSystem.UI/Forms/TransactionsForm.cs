@@ -13,18 +13,46 @@ namespace BankSystem.UI.Forms
 {
     public partial class TransactionsForm : Form
     {
+        List<string> cards = new List<string>
+        {
+            "1234",
+            "4321"
+        };
         public TransactionsForm(CardModel card)
         {
+            Card = card;
+
             InitializeComponent();
-            Name_label.Text += card.Name;
-            CardNumber_label.Text += card.CardNumber;
-            Balance_label.Text += card.Balance;
-            DailyLimit_label.Text += card.DailyLimit;
-            Bonus_label.Text += card.Bonus;
-            MonthlyPayment_label.Text += card.Bonus;
+            TypeChangeable_label.Text = Card.Name;
+            CardNumberChangeable_label.Text = Card.CardNumber;
+            BalanceChangeable_label.Text = Card.Balance.ToString();
+            DailyLimitChangeable_label.Text = Card.DailyLimit.ToString();
+            BonusChangeable_label.Text = Card.Bonus.ToString();
+            MonthlyPaymentChangeable_label.Text = Card.Bonus.ToString();
             TransactionFrom_layoutPanel.BackgroundImage = Properties.Resources.Card;
             TransactionFrom_layoutPanel.BackgroundImageLayout = ImageLayout.Zoom;
 
+        }
+
+        public CardModel Card { get; }
+
+        //TODO: Add transfer on other account logic.
+        private void Transfer_buttonClick(object sender, EventArgs e)
+        {
+            
+            if (cards.Any(c => c == CardNumber_textBox.Text))
+            {
+
+                if (Card.Balance > int.Parse(Amount_textBox.Text))
+                {
+                    Card.Balance -= int.Parse(Amount_textBox.Text);
+                    BalanceChangeable_label.Text = Card.Balance.ToString(); 
+                }
+                else
+                {
+                    MessageBox.Show("Not enough money on balance. Enter different ammount!");
+                }
+            }
         }
     }
 }
