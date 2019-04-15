@@ -65,6 +65,11 @@ namespace BankSystem.UI.Forms
                 Card.MonthlyPayment += 10;
                 MonthlyPaymentChangeable_label.Text = Card.MonthlyPayment.ToString();
             }
+            else if(!SMSBank_checkBox.Checked)
+            {
+                Card.MonthlyPayment -= 10;
+                MonthlyPaymentChangeable_label.Text = Card.MonthlyPayment.ToString();
+            }
         }
     }
 }
