@@ -48,7 +48,6 @@
             this.BonusChangeable_label = new System.Windows.Forms.Label();
             this.MonthlyPaymentChangeable_label = new System.Windows.Forms.Label();
             this.SMSBank_checkBox = new System.Windows.Forms.CheckBox();
-            this.Currency_comboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // TransactionFrom_layoutPanel
@@ -244,27 +243,11 @@
             this.SMSBank_checkBox.UseVisualStyleBackColor = true;
             this.SMSBank_checkBox.Click += new System.EventHandler(this.SMSBank_checkBox_Click);
             // 
-            // Currency_comboBox
-            // 
-            this.Currency_comboBox.Font = new System.Drawing.Font("Sylfaen", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Currency_comboBox.FormattingEnabled = true;
-            this.Currency_comboBox.Items.AddRange(new object[] {
-            "Gel",
-            "USD",
-            "Euro",
-            "GBS"});
-            this.Currency_comboBox.Location = new System.Drawing.Point(170, 232);
-            this.Currency_comboBox.Name = "Currency_comboBox";
-            this.Currency_comboBox.Size = new System.Drawing.Size(121, 22);
-            this.Currency_comboBox.TabIndex = 8;
-            this.Currency_comboBox.SelectedIndexChanged += new System.EventHandler(this.Currency_comboBox_SelectedIndexChanged);
-            // 
             // TransactionsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Currency_comboBox);
             this.Controls.Add(this.SMSBank_checkBox);
             this.Controls.Add(this.AmountConfirmation_button);
             this.Controls.Add(this.Amount_textBox);
@@ -314,6 +297,5 @@
         private System.Windows.Forms.Label BonusChangeable_label;
         private System.Windows.Forms.Label MonthlyPaymentChangeable_label;
         private System.Windows.Forms.CheckBox SMSBank_checkBox;
-        private System.Windows.Forms.ComboBox Currency_comboBox;
     }
 }
